@@ -7,8 +7,9 @@ tr,
 p,
 a {
   font-family: Helvetica, Arial, Verdana, sans-serif;
-  font-size: 16px; 
+  font-size: 18px; 
   font-weight: 400;
+  line-height: 1.2em;
 }
 
 a {
@@ -24,18 +25,21 @@ name {
 
 header {
     font-family: Helvetica, Arial, Verdana, sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 descrip {
     font-family: Helvetica, Arial, Verdana, sans-serif;
-    font-size: 14px
+    font-size: 16px; 
+    font-style: italic; 
+    line-height: 1.2em;
+    margin-left: 0em; 
 }
 
 paper {
     font-family: Helvetica, Arial, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 550;
 }
 
