@@ -53,7 +53,7 @@
             <header>Research</header>
             <p> 
                 My research focuses on developing and analyzing reinforcement learning algorithms. 
-                I care about <u>sample efficiency</u>, <u>alignment with human desiderata</u>, and <u>practical efficacy</u>, and I commonly use tools from statistical learning theory, optimization, and behavioral economics. 
+                I care about <u>sample and computational efficiency</u>, and <u>alignment with human desiderata</u>. I commonly use tools from statistical learning theory, optimization, and behavioral economics. 
             </p>
         </td>
         <td style='width:20%;vertical-align=middle;padding=10px'>
@@ -77,14 +77,46 @@
         <tr width='100%' vertical-align='middle' padding='30px'>
             <td>
                 <br>
+                <a href='https://openreview.net/pdf?id=yJYVcItE3K'>
+                <paper>Non-adaptive Online Finetuning for Offline Reinforcement Learning</paper>
+                </a>
+                <br>
+                (under review, 2023) <strong>Audrey Huang</strong>, Mohammad Ghavamzadeh, Nan Jiang, Marek Petrik.               
+                <br>
+                <descrip> 
+                    Given an offline dataset, how should we collect a non-adaptive online dataset in order to maximize improvement over the purely offline policy?
+                    <!-- as linear functions of the density features (from the low-rank decomposition).  -->
+                    <!-- prior works that focus on the left features, we leverage the right features, which induce models for state occupancies, for reward-free learning.  -->
+                </descrip>
+            </td>
+        </tr>
+
+        <!-- <tr width='100%' vertical-align='middle' padding='30px'>
+            <td>
+                <br>
+                <paper>Timing as an Action: Learning when to Observe and Act</paper>
+                <br>
+                (under review, 2023) Helen Zhou*, <strong>Audrey Huang</strong>*, Zack Lipton, David Childers
+                <br>
+                <descrip> 
+                    RL algorithms for a healthcare-motivated setting where the learner must choose how many timesteps to repeat each action for, but doesn't observe the intermediate states.  
+                </descrip>
+            </td>
+        </tr> -->
+
+        <tr width='100%' vertical-align='middle' padding='30px'>
+            <td>
+                <br>
                 <a href='https://arxiv.org/pdf/2302.02252.pdf'>
                 <paper>Reinforcement Learning in Low-Rank MDPs with Density Features</paper>
                 </a>
                 <br>
-                (under review) <strong>Audrey Huang</strong>*, Jinglin Chen*, Nan Jiang.               
+                (ICML 2023) <strong>Audrey Huang</strong>*, Jinglin Chen*, Nan Jiang.               
                 <br>
                 <descrip> 
-                    Unlike prior works that focus on the left features, we leverage the right features, which induce models for state occupancies, for reward-free learning. 
+                    We model occupancies for reward-free RL in low-rank MDPs, with novel inductive error analysis to tame error exponentiation. 
+                    <!-- as linear functions of the density features (from the low-rank decomposition).  -->
+                    <!-- prior works that focus on the left features, we leverage the right features, which induce models for state occupancies, for reward-free learning.  -->
                 </descrip>
             </td>
         </tr>
