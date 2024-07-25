@@ -11,7 +11,7 @@
 
 <body>
     <!-- <table border='0' width='100%' max-width='700px' > -->
-    <table style='width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;' >
+    <table style='width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;' >
         <tbody>
         <tr>
         <!-- <td width='60%' vertical-align='middle' padding='30px'> -->
@@ -20,40 +20,51 @@
             <p style='text-align:center'>
             <name> Audrey Huang </name>
             </p>
-            <br>
-            <p> 
+            <p style="margin-top:30px;"> 
                 I am a Computer Science PhD student at UIUC, where I am fortunate to be advised by <a href='https://nanjiang.cs.illinois.edu/'>Nan Jiang</a>. 
+                <!-- Previously, I received my MS from CMU's Machine Learning Department and my BS from Caltech.  -->
+                <bold>I work on reinforcement learning and, more broadly, interactive decision making.</bold> 
+            </p>
+            <p>    
+                I'm thankful for incredible summers at Microsoft Research working with <a href='https://people.cs.umass.edu/~akshay/'>Akshay Krishnamurthy</a> and <a href='https://dylanfoster.net/'>Dylan Foster</a>; at Google Research with <a href='https://mohammadghavamzadeh.github.io/'>Mohammad Ghavamzadeh</a> and <a href='https://marek.petrik.us/'>Marek Petrik</a>; and at Adobe Research.  
                 <!-- My research focuses on reinforcement learning.  -->
             </p>
-            <p>
-                Previously, I obtained my MS from CMU's Machine Learning Department, where I worked with <a href='http://zacklipton.com/'>Zack Lipton</a> and <a href='https://www.cs.purdue.edu/homes/kamyar/'>Kamyar Azizzadenesheli</a>, after completing a BS in Computer Science at Caltech.  
-            </p>
 
-            <p style='text-align:center'>
-                <a href="https://scholar.google.com/citations?hl=en&user=zl70inwAAAAJ&view_op=list_works&sortby=pubdate">google scholar</a> &nbsp&nbsp&nbsp
-                <a href="mailto:audreyh5@illinois.edu">email</a> 
+            <p style='text-align:center;margin-top:-10px'>
+                [<a href="https://scholar.google.com/citations?hl=en&user=zl70inwAAAAJ&view_op=list_works&sortby=pubdate">google scholar</a>] &nbsp&nbsp&nbsp
+                [<a href="mailto:audreyh5@illinois.edu">email</a>] 
             </p>
 
         </td>
         <!-- <td width='30%' vertical-align='middle' padding='500px'> -->
         <td style='width:30%;vertical-align=middle;padding=10px'>
-            <img style='float:right' src='images/thumbnail.jpg' width='80%'>
+            <img src='images/thumbnail.jpg' width='70%' style="margin-left:30px; margin-top:30px">
         </td>
         </tr>
         </tbody>
     </table>
 
+    <!-- <br> -->
     <br>
-    <br>
-    <table style='width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;' >
+    <table style='width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;' >
         <tbody>
         <tr>
         <!-- <td width='100%' max-width=600px vertical-align='left' padding='5%'> -->
-        <td style='width:90%;vertical-align=middle;padding=10px;'>
-            <header>Research</header>
+        <td style='width:90%;vertical-align=top;padding=10px;'>
+            <header style="margin-bottom:-2px">Research</header>
             <p> 
-                My research focuses on developing and analyzing reinforcement learning algorithms. 
-                I care about <u>sample and computational efficiency</u>, and <u>alignment with human desiderata</u>. I commonly use tools from statistical learning theory, optimization, and behavioral economics. 
+                <!-- My research focuses on reinforcement learning and, more broadly, interactive decision making.  -->
+                I care about developing principled and implementable algorithms with provable guarantees.
+                <bold>Current/previous threads include:</bold>  
+            <ul style="margin-top:-11px;">
+                <li>Online finetuning (e.g., of large language models)</li>
+                <li>Imitation learning</li>
+                <li>Tractable online exploration</li>
+                <li>Offline RL and evaluation</li>
+            </ul>
+            </p>
+            <p style="margin-top:-10px;">
+                I believe that theoretical insights into fundamental questions will lead to real-world algorithmic improvements, and vice versa. 
             </p>
         </td>
         <td style='width:20%;vertical-align=middle;padding=10px'>
@@ -61,18 +72,39 @@
         </tr>
         </tbody>
     </table>
-
     <br>
     
-    <table style='width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;' >
+    <table style='width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;' >
         <tbody>
 
         <tr>
         <td vertical-align='middle'>
-            <header>Publications</header>
+            <header style="margin-bottom:15px">Selected Papers</header>
         </td>
         </tr>
-        <br> 
+        <!-- <br>  -->
+
+        <td>
+            <!-- <br> -->
+            <a href='https://arxiv.org/pdf/2407.13399'>
+            <paper>
+                Correcting the Mythos of KL-Regularization: 
+                Direct Alignment without Overoptimization via Chi-Squared
+                Preference Optimization
+            </paper>
+            </a>
+            <!-- <br> -->
+            <br>
+            <authors>
+                (Preprint, 2024) Audrey Huang*, Wenhao Zhan, Tengyang Xie, Jason D. Lee, Wen Sun, Akshay Krishnamurthy, Dylan J. Foster                
+            </authors>
+            <br>
+            <descrip> 
+                A one-line change to DPO derived from chi-squared regularization provably mitigates overoptimization. 
+                <!-- Algorithms derived from KL-regularization (e.g., RLHF, DPO+SFT) have exponentially worse sample complexity.   -->
+            </descrip>
+        </br>
+        </td>
 
         <tr width='100%' vertical-align='middle' padding='30px'>
             <td>
@@ -81,10 +113,13 @@
                 <paper>Non-adaptive Online Finetuning for Offline Reinforcement Learning</paper>
                 </a>
                 <br>
-                (under review, 2023) <strong>Audrey Huang</strong>, Mohammad Ghavamzadeh, Nan Jiang, Marek Petrik.               
+                <authors>
+                (RLC, 2024) Audrey Huang*, Mohammad Ghavamzadeh, Nan Jiang, Marek Petrik. 
+                </authors>              
                 <br>
                 <descrip> 
-                    Given an offline dataset, how should we collect a non-adaptive online dataset in order to maximize improvement over the purely offline policy?
+                    
+                    Given an offline dataset, how should online data be collected in order to maximize policy improvement? 
                     <!-- as linear functions of the density features (from the low-rank decomposition).  -->
                     <!-- prior works that focus on the left features, we leverage the right features, which induce models for state occupancies, for reward-free learning.  -->
                 </descrip>
@@ -99,7 +134,7 @@
                 (under review, 2023) Helen Zhou*, <strong>Audrey Huang</strong>*, Zack Lipton, David Childers
                 <br>
                 <descrip> 
-                    RL algorithms for a healthcare-motivated setting where the learner must choose how many timesteps to repeat each action for, but doesn't observe the intermediate states.  
+                    RL algos for a healthcare-motivated setting where the learner decides the # of timesteps each action is taken for, but doesn't observe the intermediate states.  
                 </descrip>
             </td>
         </tr> -->
@@ -111,10 +146,12 @@
                 <paper>Reinforcement Learning in Low-Rank MDPs with Density Features</paper>
                 </a>
                 <br>
-                (ICML 2023) <strong>Audrey Huang</strong>*, Jinglin Chen*, Nan Jiang.               
+                <authors>
+                (ICML 2023) Audrey Huang*, Jinglin Chen, Nan Jiang.  
+                </authors>             
                 <br>
                 <descrip> 
-                    We model occupancies for reward-free RL in low-rank MDPs, with novel inductive error analysis to tame error exponentiation. 
+                    Offline and online RL via the occupancy functions is sample-efficient in low-rank MDPs. A clean inductive error analysis tames error exponentiation. 
                     <!-- as linear functions of the density features (from the low-rank decomposition).  -->
                     <!-- prior works that focus on the left features, we leverage the right features, which induce models for state occupancies, for reward-free learning.  -->
                 </descrip>
@@ -125,18 +162,20 @@
             <td>
                 <br>
                 <a href='https://arxiv.org/pdf/2210.15543.pdf'>
-                <paper>Beyond the Return: Off-policy Function Estimation under  User-specified<br> Error-measuring Distributions</paper>
+                <paper>Beyond the Return: Off-policy Function Estimation under User-specified<br> Error-measuring Distributions</paper>
                 </a>
                 <br>
-                (NeurIPS 2022) <strong>Audrey Huang</strong>, Nan Jiang.               
+                <author>
+                (NeurIPS 2022) Audrey Huang*, Nan Jiang. 
+                </author>              
                 <br>
                 <descrip> 
-                    Regularization is key for accurate off-policy value and density-ratio estimation under general function approximation. 
+                    Regularization is key for accurate offline value and density-ratio estimation from general function approximators. 
                 </descrip>
             </td>
         </tr>
 
-        <tr width='100%' vertical-align='middle' padding='30px'>
+        <!-- <tr width='100%' vertical-align='middle' padding='30px'>
             <td>
                 <br>
                 <a href='https://arxiv.org/pdf/2206.13648.pdf'>
@@ -149,7 +188,7 @@
                     Uniform convergence and gradient-based optimization of general risk functionals using distribution-centric methods.   
                 </descrip>
             </td>
-        </tr>
+        </tr> -->
 
         <tr width='100%' vertical-align='middle' padding='30px'>
             <td>
@@ -159,15 +198,17 @@
                 </paper>
                 </a>
                 <br>
-                (COLT 2022) Wenhao Zhan, Baihe Huang, <strong>Audrey Huang</strong>, Nan Jiang, Jason Lee. 
+                <authors> 
+                (COLT 2022) Wenhao Zhan, Baihe Huang, Audrey Huang*, Nan Jiang, Jason Lee. 
+                </authors>
                 <br>
                 <descrip> 
-                    Sample-efficient offline learning under only realizability and single-policy concentratability, leveraging primal-dual MDP formulation and regularization.  
+                    With proper regularization, offline RL is sample-efficient given only realizable function classes, and data with single-policy coverage.    
                 </descrip>
             </td>
         </tr>
 
-        <tr width='100%' vertical-align='middle' padding='30px'>
+        <!-- <tr width='100%' vertical-align='middle' padding='30px'>
             <td>
                 <br>
                 <a href='https://proceedings.mlr.press/v151/huang22b/huang22b.pdf'>
@@ -210,12 +251,12 @@
                     Visual entity correspondence-based reward drives successful robotic imitation of manipulation tasks from videos. 
                 </descrip>
             </td>
-        </tr>
+        </tr> -->
 
         </tbody>
     </table>
 
-    <br> 
+    <!-- <br> 
     <table style='width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;' >
         <tbody>
 
@@ -254,7 +295,7 @@
 
 
         </tbody>
-    </table>
+    </table> -->
 
     <td>
         <br>
